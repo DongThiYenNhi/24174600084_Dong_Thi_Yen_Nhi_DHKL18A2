@@ -1,0 +1,13 @@
+#Bài 6:
+x_a=float(input(" Nhập toạ độ x của đỉnh A"))
+y_a=float(input(" Nhập toạ độ y của đỉnh A"))
+x_b=float(input(" Nhập toạ độ x của đỉnh B"))
+y_b=float(input(" Nhập toạ độ y của đỉnh B"))
+x_c=float(input(" Nhập toạ độ x của đỉnh C"))
+y_c=float(input(" Nhập toạ độ y của đỉnh C"))
+x_g=(x_a+x_b+x_c)/3
+y_g=(y_a+y_b+y_c)/3
+print(f" Toạ độ điểm G là ({x_g: .2f},{y_g: .2f})")
+
+
+

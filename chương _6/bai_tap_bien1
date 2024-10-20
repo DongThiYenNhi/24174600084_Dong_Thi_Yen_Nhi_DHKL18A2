@@ -1,0 +1,11 @@
+#Bài 1:
+r=float(input("Nhap ban kinh day khoi tru:"))
+h=float(input("Nhap chieu cao khoi tru:"))
+sđ= 2* 3.14 * (r**2)
+dt_xung_quanh=2* 3.14 * (r*h)
+dt_toan_phan= dt_xung_quanh + (2*3.14*r**2)
+the_tich=sđ*h
+print(f"Dien tich xung quanh cua khoi tru {dt_xung_quanh: .2f}")
+print(f"Dien tich toan phan cua khoi tru{dt_toan_phan: .2f}")
+print(f"The tich cua khoi tru {the_tich: .2f}")
+
