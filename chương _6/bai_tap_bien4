@@ -1,8 +1,12 @@
 # Bài 4:
-thoi_gian_sd=float(input("Nhập thời gian sử dụng bóng đèn"))
-U=220
-I=2.7
-P=U*I
-gd=7000
-tien_dien=(P/3600000)*thoi_gian_sd*gd
-print(f" Tiền điện phải trả là:{tien_dien:.6f}")
+thoi_gian_sd=float(input("Nhập thời gian sử dụng bóng đèn: "))
+if thoi_gian_sd > 0:
+    U=220
+    I=2.7
+    P=U*I
+    gd=7000
+    tien_dien=(P/3600000)*thoi_gian_sd*gd
+    print(f" Tiền điện phải trả là: {tien_dien}")
+else:
+    print(" Giá trị không thoả mãn")
+print(" Kết thúc chương trình")
