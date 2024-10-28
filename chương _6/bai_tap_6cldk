@@ -1,0 +1,15 @@
+#Bài 6 câu lệnh điều kiện
+print("Nhập toạ độ I")
+x=float(input("Nhập x= "))
+y=float(input("Nhập y= "))
+print("Nhập toạ độ M")
+a=float(input("Nhập a= "))
+b=float(input("Nhập b= "))
+ban_kinh_r=float(input("Nhập bán kính r: "))
+do_dai_IM = ((a-x)**2+(b-y)**2)**(1/2)
+if do_dai_IM > ban_kinh_r:
+    print("Điểm M nằm ngoài đường tròn")
+elif do_dai_IM < ban_kinh_r:
+    print("Điểm M nằm trong đường tròn")
+else:
+    print("Điểm M nằm trên đường tròn")

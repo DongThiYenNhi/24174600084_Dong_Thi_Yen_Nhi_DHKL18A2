@@ -1,0 +1,22 @@
+#Bài 5 câu lệnh điều kiện:
+print("Nhập toạ độ A")
+x_1=int(input("Nhập x1 = "))
+y_1=int(input("Nhập y1 = "))
+z_1=int(input("Nhập z1 = "))
+print("Nhập toạ độ B")
+x_2=int(input("Nhập x2 = "))
+y_2=int(input("Nhập y2 = "))
+z_2=int(input("Nhập z2 = "))
+print("Nhập toạ độ C")
+x_3=int(input("Nhập x3 = "))
+y_3=int(input("Nhập y3 = "))
+z_3=int(input("Nhập z3 = "))
+khoang_cach_AB= ((x_2-x_1)**2 + (y_2-y_1)**2 + (z_2-z_1)**2 )**1/2
+khoang_cach_BC= ((x_3-x_2)**2 + (y_3-y_2)**2 + (z_3-z_2)**2 )**1/2
+khoang_cach_AC= ((x_3-x_1)**2 + (y_3-y_1)**2 + (z_3-z_1)**2 )**1/2
+print(f"Độ dài AB là: {khoang_cach_AB}")
+print(f"Độ dài BC là: {khoang_cach_BC}")
+print(f"Độ dài AC là: {khoang_cach_AC}")
+
+
+

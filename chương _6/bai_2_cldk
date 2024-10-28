@@ -1,0 +1,8 @@
+#Bài 2 câu lệnh điều kiện:
+so_nguyen_1=int(input("Nhập số nguyên thứ nhất: "))
+so_nguyen_2=int(input("Nhập số nguyên thứ hai: "))
+tich=so_nguyen_1*so_nguyen_2
+if tich > 0:
+    print(" Hai số nguyên cùng dấu")
+else:
+    print("Hai số nguyên trái dấu")
