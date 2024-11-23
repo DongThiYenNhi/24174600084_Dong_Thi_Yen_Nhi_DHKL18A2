@@ -1,0 +1,93 @@
+#Bài 1 ckt:
+chuoi_ky_tu=input("Nhập vào chuỗi ký tự: ")
+so_tu=len(chuoi_ky_tu.split())
+print(f"Số các từ trong chuỗi ký tự là {so_tu}")
+#Bài 2 ckt:
+chuoi=input("Nhập vào chuỗi ký tự: ")
+ket_qua=" ".join(chuoi.split())
+print(ket_qua)
+#Bài 3 ckt:
+h_t=input("Nhập đầy đủ họ tên của bạn: ")
+ho_ten=h_t.split()
+print("Họ:   ",ho_ten[0])
+print("Tên:    ",ho_ten[-1])
+# Bài 4 ckt:
+chuoi = input("Nhập vào chuỗi ký tự: ")
+chu = 0
+so = 0
+ky_tu=0
+for i in range(len(chuoi)):  
+    if chuoi[i] >= 'a' and chuoi[i] <= 'z' or chuoi[i] >= 'A' and chuoi[i] <= 'Z':  
+        chu += 1
+    elif chuoi[i] >= '0' and chuoi[i] <= '9':
+         so += 1
+    else: 
+        ky_tu += 1
+print(f"Số chữ cái: {chu}")
+print(f"Số chữ số: {so}")
+print(f"Số ký tự đặc biệt: {ky_tu}")
+#Bài 5 ckt:
+chuoi=input("Nhập vào chuỗi ký tự: ")
+viet_hoa=0
+viet_thuong=0
+for i in chuoi:
+    if i.isupper():
+        viet_hoa +=1
+    elif i.islower():
+        viet_thuong +=1
+print("Số chữ cái viết hoa là: ",viet_hoa)
+print("Số chữ cái viết thuong là: ",viet_thuong)
+#Bài 6 ckt:
+so=input("Nhập vào chuỗi: ")
+if so.startswith('-') and so[1:].isdigit():
+    print("Đây là số âm")
+elif so.startswith('-') and so.count('.')==1 and so[1:].isdigit:
+    print("Đây là số âm")
+else:
+    print("Đây không là số âm")
+#Bai 7 ckt:
+so=input("Nhập vào chuỗi số: ")
+if so.count('.')==1 and so[:].isdigit:
+    print("Đây là số thập phân")
+elif so.count('.')==1 and so.startswith('-') and so[:].isdigit:
+    print("Đây là số thập phân")
+else:
+    print("Đây không là số thập phân")
+# Bài 8 ckt:
+str_1 = input("Nhập chuỗi thứ nhất (str_1): ")
+str_2 = input("Nhập chuỗi thứ hai (str_2): ")
+if str_2 in str_1:
+    print(f"Chuỗi '{str_2}' nằm trong chuỗi '{str_1}'")
+else:
+    print(f"Chuỗi '{str_2}' không nằm trong chuỗi '{str_1}'")
+if str_1 in str_2:
+    print(f"Chuỗi '{str_1}' nằm trong chuỗi '{str_2}'")
+else:
+    print(f"Chuỗi '{str_1}' không nằm trong chuỗi '{str_2}'") 
+#Bài 9 ckt:
+chuoi=input("Nhập vào chuỗi: ")
+for i in range(len(chuoi)):
+    if chuoi[i] in '0,1':
+        chuoi_nhi_phan=True
+        print("Đây là chuỗi nhị phân")
+    elif chuoi_nhi_phan==False:
+        print("Đây không là chuỗi nhị phân vui lòng nhập lại")
+thap_phan = 0
+for i in range(len(chuoi)):
+    bit = int(chuoi[i])  
+    n = len(chuoi) - i - 1  
+    thap_phan += bit * (2 ** n)  
+print(f"Chuỗi nhị phân {chuoi} chuyển sang thập phân là: {thap_phan}")
+#Bai 10 ckt:
+chuoi = input("Nhập chuỗi: ")
+chu = ""
+so = ""
+for i in range(len(chuoi)):
+    if chuoi[i].isalpha():  
+        chu += chuoi[i]
+    elif chuoi[i].isdigit(): 
+        so += chuoi[i]
+ket_qua = so + chu 
+print("Chuỗi sau khi dồn: ", ket_qua)
+
+

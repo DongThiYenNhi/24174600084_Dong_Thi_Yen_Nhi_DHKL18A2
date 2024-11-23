@@ -1,7 +1,0 @@
-#Bài 1 câu lệnh điều kiện:
-so_nguyen=int(input("Nhập số nguyên: "))
-if so_nguyen % 2 == 0:
-    print("Đây là số chẵn")
-else:
-    print("Đây là số lẻ")
-    
